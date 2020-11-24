@@ -1,0 +1,17 @@
+{
+    "types": [
+        {
+            "name": "<Category name>",
+            "tests": [
+                {
+                    "name": "<test name>",
+                    "desc": "<test description>",
+                    "stdin": "<standard input>",
+                    "checks": ["stdout", "stderr", "retval", "has_stderr"] // Choices
+                },
+                ...
+            ]
+        },
+        ...
+    ]
+}
