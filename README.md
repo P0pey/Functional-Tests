@@ -1,7 +1,5 @@
 # Utils
 
-Tools for 42sh
-
 ## Testsuite
 
 Testsuite for functional tests. And try to write a portable script in python (python 3)
@@ -10,7 +8,7 @@ Testsuite for functional tests. And try to write a portable script in python (py
 ```
 usage: check.py [-h] [-R REFBIN [REFBIN ...]] [-S STDBIN] [-f TESTFILE [TESTFILE ...]] [-c CATEGORY [CATEGORY ...]] [-H]
 
-42sh Testsuite
+Functional TestSuite
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -35,20 +33,19 @@ optional arguments:
 ```
 
 ### Usage
-For 42sh
 ```
-./tests/checks.py -R bash posix -S ./42sh
+./tests/checks.py -R bash posix -S ./bin
 ```
 
 Specify one or more files (Always JSON files)
 ```
-./tests/checks.py -R bash posix -S ./42sh -f tests/tests.json
-./tests/checks.py -R bash posix -S ./42sh -f tests/tests_lexer.json tests/tests_parser.json
+./tests/checks.py -R bash posix -S ./bin -f tests/tests.json
+./tests/checks.py -R bash posix -S ./bin -f tests/tests_lexer.json tests/tests_parser.json
 ```
 
 Specify one or more category (Exact same name and no whitespace)
 ```
-./tests/checks.py -R bash posix -S ./42sh -c Basic Print Builtin
+./tests/checks.py -R bash posix -S ./bin -c Basic Print Builtin
 ```
 
 ### Test File Format
