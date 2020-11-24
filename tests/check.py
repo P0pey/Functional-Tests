@@ -103,7 +103,7 @@ def test(refbin, stdbin, testcase, hide, types):
 if __name__ == "__main__":
 
     # Argument parsing
-    parser = ap.ArgumentParser(description="42sh Testsuite")
+    parser = ap.ArgumentParser(description="Functional TestSuite")
     parser.add_argument('-R', '--refbin', help='Ref binary, One binary to rule them all, one binary to find them, One binary to bring them all and in the darkness bind them', nargs='+')
     parser.add_argument('-S', '--stdbin', help='Student binary, try to be the one binary', nargs=1)
     parser.add_argument('-f', '--testfile', help='path to the test file', nargs='+')
